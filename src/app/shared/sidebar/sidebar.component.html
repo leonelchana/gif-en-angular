@@ -1,0 +1,18 @@
+
+  <!-- sidebar -->
+  <div class="bg-dark border-rigth p-3" id="sidebar">
+    <h3 class="text-light">GifsApp</h3>
+    <hr class="text-white" />
+    <div class="list-group list-reset">
+      <a *ngFor="let item of historial;"
+       class="list-group-item list-group-item-action" 
+       (click)="buscar(item)"
+       href="#"> 
+        {{item |titlecase }} </a>
+    </div>
+    <br><br><br>
+    <div class="text-white ">2023@Leonel</div>
+    
+
+  </div>
+  <!-- end sidebar -->
